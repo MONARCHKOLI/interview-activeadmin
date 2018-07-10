@@ -29,6 +29,39 @@ There's lots of other things we can do, but this is the simplest starting point.
 *I want to* calculate and store my PHQ2 score
 *so that* a further depression diagnosis can be performed per the protocol.
 
+
+The form looks like this:
+
+```
+Over the past 2 weeks, how often have you been bothered by any of the following problems?
+
+1. Little interest of pleasure in doing things?
+
+* Not at all
+* Several days
+* More than half the days
+* Nearly every day
+
+2. Feeling down, depressed or hopeless?
+
+* Not at all
+* Several days
+* More than half the days
+* Nearly every day
+```
+
+Those two questions are scored as follows:
+
+0 * Not at all
+1 * Several days
+2 * More than half the days
+3 * Nearly every day
+
+And to get in initial diagnosis the following condition must be met:
+
+"Either or both of question 1 and question 2 must be scored as a 2 or a 3."
+
+
 ## Setting up the app
 
 You should be able to run `bin/setup` to get everything up and running. Before you start, you should have:
