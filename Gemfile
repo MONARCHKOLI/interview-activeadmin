@@ -58,6 +58,7 @@ gem 'i18n-tasks'
 gem 'rack-canonical-host'
 gem 'recipient_interceptor'
 gem 'title'
+
 group :development, :test do
   gem 'awesome_print'
   gem 'bullet'
@@ -67,12 +68,10 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'rubocop'
 end
 
 group :development do
   gem 'foreman'
-  gem 'gem-licenses'
   gem 'guard-rspec'
 end
 
@@ -81,6 +80,5 @@ group :test do
   gem 'launchy'
   gem 'rails-controller-testing'
   gem 'shoulda-matchers'
-  gem 'simplecov', require: false
   gem 'webmock'
 end
