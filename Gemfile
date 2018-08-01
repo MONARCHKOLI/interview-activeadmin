@@ -6,7 +6,7 @@ ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.0'
 # Use postgresql as the database for Active Record
-gem 'pg', '>= 0.18', '< 2.0'
+gem 'pg', '>= 0.18', '< 1.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -58,30 +58,26 @@ gem 'i18n-tasks'
 gem 'rack-canonical-host'
 gem 'recipient_interceptor'
 gem 'title'
+
 group :development, :test do
   gem 'awesome_print'
   gem 'bullet'
-  gem 'bundler-audit', '>= 0.5.0', require: false
   gem 'dotenv-rails'
   gem 'factory_bot_rails'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails'
-  gem 'rubocop'
 end
 
 group :development do
   gem 'foreman'
-  gem 'gem-licenses'
   gem 'guard-rspec'
 end
 
 group :test do
-  gem 'capybara-webkit'
   gem 'database_cleaner'
   gem 'launchy'
   gem 'rails-controller-testing'
   gem 'shoulda-matchers'
-  gem 'simplecov', require: false
   gem 'webmock'
 end
