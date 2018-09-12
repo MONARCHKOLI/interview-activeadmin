@@ -1,27 +1,42 @@
 # Epion Interview Project
 
-Hi and thanks for being interested in coming to work here at Epion Health. Our team values building, reviewing, and pairing on well-crafted applications and we'd like to find out more about how _you_ build applications by working on a small project together.
+Thanks for being interested in coming to work here at Epion Health. Our team values building, reviewing, and pairing on well-crafted applications.  This repo was built to test how you build applications and how you would fit in working with the team at Epion.  It's a simplified version of our main Check-in application, and will give you some insight into our product development process.  If you'd like to learn more about our Check-in product please visit our [website](http://www.epionhealth.com/checkin-how-it-works-2/)
 
-## The CheckIn app
+## Let's get started (Take home section)
 
-The Epion CheckIn application provides a quick and easy way for patients to fill out all the necessary medical information for their appointment on an iPad. We're going to use a *very* simple version of the application so we can focus on adding new functionality without getting too deep in the weeds on the details of the real application.
+### Setup
 
-That said, we'd like to treat this like a real project. That means writing good, well-factored code, including meaningful tests, and solving the problem in front of us with both thoughtfulness and efficiency.
+Please go ahead and clone this repo and run `bin/setup` to get everything up and running. Before you start, you should have:
 
-This repo contains a Rails application with the same kind of testing infrastructure (RSpec and friends) that we use to build our real world app.
+* Ruby 2.5.1
+* Postgres 9.4 or higher (we use 10.x)
+* Node 9+
+* Yarn 1.9.x
 
-## The problem to solve
+The setup process will install dependencies, and automatically configure the database to have a sample patient to work with for your interview.  If you run into any issues with setup, please reach out to your interview team to ask for assistance.
 
-One of the most common pieces of check-in paperwork is a patient questionaire to help assess if a patient is suffering from a specific ailment, which we'll call a "screener". We've implemented a number of screeners in our application, but for the this exercise, you're going to add the first one, the PHQ for depression screening.
+### First passing spec
+
+Now that your repo is setup, we can start the fun stuff!  Go ahead and run `bundle exec rspec`.  You should see one failing spec.
+
+- [ ] add enough code to make this test pass
+- [ ] open a pull-request with the changes for us to review
+- [ ] Email your interview team with a link to the PR.
+
+We will review your PR as a team, and reach back out to you to set up a pairing session
+
+## The problem to solve (Pairing Session)
+
+One of the most common pieces of check-in paperwork is a patient questionnaire to help assess if a patient is suffering from a specific ailment, which we'll call a "screener". We've implemented a number of screeners in our application, but for the this exercise, you're going to add the first one, the PHQ for depression screening.
 
 Details about the screener are here: http://www.cqaimh.org/pdf/tool_phq9.pdf
 
 In a nutshell, we need to
 
-[ ] Create a form with the first 2 scored questions the patient can complete
-[ ] Calculate the resulting score based on the rules (below)
-[ ] Store the results for this checkin
-[ ] Notify the user that they need additional screening if their score is appropriate
+- [ ] Create a form with the first 2 scored questions the patient can complete
+- [ ] Calculate the resulting score based on the rules (below)
+- [ ] Store the results for this checkin
+- [ ] Notify the user that they need additional screening if their score is appropriate
 
 There's lots of other things we can do, but this is the simplest starting point.
 
@@ -29,6 +44,8 @@ There's lots of other things we can do, but this is the simplest starting point.
 *I want to* calculate and store my PHQ2 score
 *so that* a further depression diagnosis can be performed per the protocol.
 
+
+## Additional information about the task
 
 The form looks like this:
 
@@ -62,13 +79,4 @@ And to get in initial diagnosis the following condition must be met:
 "Either or both of question 1 and question 2 must be scored as a 2 or a 3."
 
 
-## Setting up the app
 
-You should be able to run `bin/setup` to get everything up and running. Before you start, you should have:
-
-* Ruby 2.5.1
-* Postgres 9.4 or higher (we use 10.x)
-* Some recent version of NodeJS
-* Some recent version of Yarn
-
-The setup process will create a patient in the database and we're ignoring the whole authentication process since we're interested in the problem we're solving, not the details about how a user authenticates in the app.
