@@ -8,7 +8,7 @@ Thanks for being interested in coming to work here at Epion Health. Our team val
 
 Please go ahead and clone this repo and run `bin/setup` to get everything up and running. Before you start, you should have:
 
-* Ruby 2.5.1
+* Ruby 2.5.3
 * Postgres 9.4 or higher (we use 10.x)
 * Node 9+
 * Yarn 1.9.x
