@@ -10,10 +10,13 @@ We will use Slack to share your screen unless that wouldn't work for you. Please
 
 Please go ahead and clone this repo and run `bin/setup` to get everything up and running. Before you start, you should have:
 
-* Ruby 2.5.3
-* Postgres 9.4 or higher (we use 10.x)
-* Node 9+
-* Yarn 1.9.x
+* Ruby 2.5.5
+
+We use the following software versions (if you have previous releases and they work well there's no need to update):
+
+* Postgres 11.2
+* Node 10.1.0
+* Yarn 1.15.2
 
 The setup process will install dependencies, and automatically configure the database to have a sample patient to work with for your interview.  If you run into any issues with setup, please reach out to your interview team to ask for assistance.
 
