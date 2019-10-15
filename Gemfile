@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.5.5'
+ruby '2.6.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.0'
+gem "rails", "~> 6.0.0"
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 1.0'
 # Use Puma as the app server
@@ -62,7 +62,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'pry-byebug'
   gem 'pry-rails'
-  gem 'rspec-rails'
+  gem "rspec-rails", "~> 4.0.0.beta2"
 end
 
 group :development do
