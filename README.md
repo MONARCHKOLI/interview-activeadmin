@@ -10,11 +10,11 @@ We will use Slack to share your screen unless that wouldn't work for you. Please
 
 Please go ahead and clone this repo and run `bin/setup` to get everything up and running. Before you start, you should have:
 
-* Ruby 2.5.5
+* Ruby 2.6.5
 
 We use the following software versions (if you have previous releases and they work well there's no need to update):
 
-* Postgres 11.2
+* Postgres 11.3
 * Node 10.1.0
 * Yarn 1.15.2
 
