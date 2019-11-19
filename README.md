@@ -79,9 +79,7 @@ Those two questions are scored as follows:
 2 * More than half the days
 3 * Nearly every day
 
-And to get in initial diagnosis the following condition must be met:
-
-"Either or both of question 1 and question 2 must be scored as a 2 or a 3."
+A question would be considered to have a `high` score if the patient chose `2 * More than half the days` or `3 * Nearly every day`. If either question 1 or question 2 is scored as `high`, or if both questions are scored as `high`, the user should be notified that additional screening should be completed.
 
 
 
