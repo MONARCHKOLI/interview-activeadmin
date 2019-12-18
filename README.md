@@ -24,7 +24,7 @@ The setup process will install dependencies, and automatically configure the dat
 
 Now that your repo is setup, we can start the fun stuff!  Go ahead and run `bundle exec rspec`.  You should see one failing spec.
 
-- [ ] Add enough code to make this test pass
+- [ ] Add _just_ enough code to make this test pass
 - [ ] Prepare a patch with `git format-patch`
 - [ ] Send the patch by email to your interviewer
 
