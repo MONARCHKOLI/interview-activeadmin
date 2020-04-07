@@ -57,7 +57,7 @@ The form looks like this:
 ```
 Over the past 2 weeks, how often have you been bothered by any of the following problems?
 
-1. Little interest of pleasure in doing things?
+1. Little interest or pleasure in doing things?
 
 * Not at all
 * Several days
