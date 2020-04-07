@@ -22,7 +22,7 @@ RSpec.describe CheckInsController, type: :controller do
       expect { post(:create) }.to change(CheckIn, :count).by(1)
     end
 
-    it "redirects to the edit page" do
+    it "redirects to the check_in show page" do
       check_in = create(:check_in, id: 1)
       allow(CheckIn).to receive(:create).and_return(check_in)
 
@@ -64,7 +64,7 @@ RSpec.describe CheckInsController, type: :controller do
       expect(CheckIn).to have_received(:find).with("1")
     end
 
-    it "redirects to the edit page" do
+    it "redirects to the new check_in page" do
       check_in = create(:check_in, id: 1)
       allow(CheckIn).to receive(:find).with("1").and_return(check_in)
 
