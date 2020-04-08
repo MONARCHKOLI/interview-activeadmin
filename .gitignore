@@ -29,5 +29,6 @@
 /public/packs
 /public/packs-test
 /node_modules
+.ruby-version
 yarn-debug.log*
 .yarn-integrity
