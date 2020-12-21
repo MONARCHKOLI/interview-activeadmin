@@ -1,6 +1,6 @@
 # Epion Interview Project
 
-Thanks for being interested in coming to work here at Epion Health. Our team values building, reviewing, and pairing on well-crafted applications.  This repo was built to test how you build applications and how you would fit in working with the team at Epion.  It's a simplified version of our main Check-in application, and will give you some insight into our product development process.  If you'd like to learn more about our Check-in product please visit our [website](http://www.epionhealth.com/checkin-how-it-works-2/)
+Thanks for being interested in coming to work here at Epion Health. Our team values building, reviewing, and pairing on well-crafted applications.  This repo was built to test how you build applications and how you would fit in working with the team at Epion.  It's a simplified version of our main Check-in application, and will give you some insight into our product development process.  If you'd like to learn more about our Check-in product please visit our [website](https://epionhealth.com/patient-engagement-software/patient-check-in-software/)
 
 We will use Slack to share your screen unless that wouldn't work for you. Please make sure you have the desktop app installed beforehand.
 
@@ -34,7 +34,7 @@ We will review your PR as a team, and reach back out to you to set up a pairing 
 
 One of the most common pieces of check-in paperwork is a patient questionnaire to help assess if a patient is suffering from a specific ailment, which we'll call a "screener". We've implemented a number of screeners in our application, but for the this exercise, you're going to add the first one, the PHQ for depression screening.
 
-Details about the screener are here: http://www.cqaimh.org/pdf/tool_phq9.pdf
+Details about the screener are here: https://www.uspreventiveservicestaskforce.org/Home/GetFileByID/218
 
 In a nutshell, we need to
 
