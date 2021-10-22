@@ -31,14 +31,13 @@ Your assignment is to:
 - [ ] Create a form with the first 2 scored questions the patient can complete
 - [ ] Calculate the resulting score based on the rules (see below)
 - [ ] Store the results for this check-in
-- [ ] Show a message to the user that they need additional screening if their score is appropriate (see below)
+- [ ] Show a message to the user about whether they need additional screening (see below)
 
 There's lots of other things we can do, but this is the simplest starting point.
 
 *When* I am completing the checkin
 *I want to* calculate and store my PHQ2 score
 *so that* a further depression diagnosis can be performed per the protocol.
-
 
 ## Additional information about the task
 
@@ -69,7 +68,8 @@ Those two questions are scored as follows:
 2 * More than half the days
 3 * Nearly every day
 
-A question would be considered to have a `high` score if the patient chose `2 * More than half the days` or `3 * Nearly every day`. If either question 1 or question 2 is scored as `high`, or if both questions are scored as `high`, the user should be shown a message that additional screening should be completed.
+A question would be considered to have a `high` score if the patient chose `2 * More than half the days` or `3 * Nearly every day`. If either question 1 or question 2 is scored as `high`, or if both questions are scored as `high`, the user should be shown a message that additional screening should be completed. Otherwise the user should be shown a message that additional screening is not needed.
 
+## Submitting your work
 
-
+Do as many git commit as you feel are appropriate while doing the exercise. When you are ready for us to review your work, please open a pull request, and email your interviewer that it's ready.
