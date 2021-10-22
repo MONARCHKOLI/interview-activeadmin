@@ -70,6 +70,10 @@ Those two questions are scored as follows:
 
 A question would be considered to have a `high` score if the patient chose `2 * More than half the days` or `3 * Nearly every day`. If either question 1 or question 2 is scored as `high`, or if both questions are scored as `high`, the user should be shown a message that additional screening should be completed. Otherwise the user should be shown a message that additional screening is not needed.
 
+## Git commit and tests
+
+Do as many git commits as you feel are appropriate. If you are familiar with writing rspec tests, you can also add as many tests as you feel are appropriate.
+
 ## Submitting your work
 
-Do as many git commit as you feel are appropriate while doing the exercise. When you are ready for us to review your work, please open a pull request, and email your interviewer that it's ready.
+When you are ready for us to review your work, please open a pull request, and email your interviewer that it's ready.
