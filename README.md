@@ -76,4 +76,4 @@ Do as many git commits as you feel are appropriate. If you are familiar with wri
 
 ## Submitting your work
 
-When you are ready for us to review your work, please open a pull request, and email your interviewer that it's ready.
+When you are ready for us to review your work, please email your interviewer with [patch file(s)](https://thoughtbot.com/blog/send-a-patch-to-someone-using-git-format-patch) containing your changes
