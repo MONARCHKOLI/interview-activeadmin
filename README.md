@@ -6,13 +6,13 @@ Thanks for being interested in coming to work here at Epion Health. Our team val
 
 Please go ahead and clone this repo and run `bin/setup` to get everything up and running. Before you start, you should have:
 
-* Ruby 2.7.1
+* Ruby 3.0.3
 
 We use the following software versions (if you have previous releases and they work well there's no need to update):
 
 * Postgres 11.3
-* Node 10.1.0
-* Yarn 1.15.2
+* Node 12.22.3
+* Yarn 1.22.15
 
 The setup process will install dependencies, and automatically configure the database to have a sample patient to work with for your interview.  If you run into any issues with setup, please reach out to your interview team to ask for assistance.
 
