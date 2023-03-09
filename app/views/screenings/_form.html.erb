@@ -1,0 +1,73 @@
+<h1 style="text-align:center">PATIENT HEALTH QUESTIONNAIRE (PHQ-9)</h1>
+<i><sup>**</sup>"Over the past 1 weeks, how often have you been bothered by any of the following problems?"</i>
+<h1 style="text-align:center">New screening</h1><br>
+<div class="container-fluid"> 
+  <div class="container" style="border:1px solid black;">
+
+  
+    <%= form_with model: @screening do |form| %>
+      <div>
+        <p><b>1. Little interest or pleasure in doing things</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <br>
+      <div>
+        <p><b>2. Feeling down, depressed, or hopeless</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <br>
+      <div>
+        <p><b>3. Trouble falling or staying asleep, or sleeping too much</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <br>
+      <div>
+        <p><b>4. Feeling tired or having little energy</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <br>
+      <div>
+        <p><b>5. Poor appetite or overeating</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <br>
+      <div>
+        <p><b>6. Feeling bad about yourself or that you are a failure or
+        have let yourself or your family down</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <br>
+      <div>
+        <p><b>7. Trouble concentrating on things, such as reading the
+        newspaper or watching television</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <br>
+      <div>
+        <p><b>8. Moving or speaking so slowly that other people could
+        have noticed. Or the opposite being so figety or
+        restless that you have been moving around a lot more
+        than usual</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <br>
+      <div>
+        <p><b>9. Thoughts that you would be better off dead, or of
+        hurting yourself</b></p>
+        <%= form.select :answers, [['Not at all',0],["Several days",1],["More than half the days",2],["Nearly every day",3]]%>
+      </div>
+      <hr>
+      <div>
+        <%= form.submit %>
+      </div>
+    <% end %>
+  </div>
+</div>

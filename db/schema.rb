@@ -29,7 +29,8 @@ ActiveRecord::Schema.define(version: 2023_03_07_115354) do
   end
 
   create_table "screenings", force: :cascade do |t|
-    t.integer "total"
+    t.integer "check_in_id"
+    t.json "response"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

@@ -3,6 +3,7 @@ class CheckInsController < ApplicationController
   end
 
   def create
+    byebug
     check_in = CheckIn.create(patient: current_patient)
     redirect_to check_in_path(check_in)
   end
