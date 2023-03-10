@@ -1,1 +1,5 @@
-<%# <%= render "form"%> %>
+<%= @screening.severity%>
+<br>
+<%= link_to "Home" , root_path%>
+
+<%= link_to "Screen Again", check_in_path(params[:check_in_id])%>

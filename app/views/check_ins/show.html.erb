@@ -1,6 +1,4 @@
 <p>Please complete all of the steps on this page:</p>
-<%= link_to "Start PHQ screener", "/check_ins/#{@check_in.id}/screenings/1" %>
+<%= link_to "Start PHQ screener{Depression}", "/check_ins/#{@check_in.id}/screenings/1" %>
 
-<%= form_for(:check_in, url: check_in_path, method: :put,id: "#{@check_in.id}") do |f| %>
-  <%= f.submit "Complete check in" %>
-<% end %>
+<%= link_to "Start PHQ screener{Fever/Cold}", "/check_ins/#{@check_in.id}/screenings/1" %>

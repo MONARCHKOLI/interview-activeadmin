@@ -1,18 +1,16 @@
-<%# <%= render "form"%>
-
-<%= form_for(:screening, url:  new_check_in_screening_path, method: :get) do |f| %>
+<%= form_for(:screening, url:  check_in_screenings_path, method: :post) do |f| %>
   <% Screening.questions.each_with_index do |question, index|%>
     <br>
     <br>
     <%= f.label question %>
     <br>
     <br>
-    <%= f.select("response-#{index}", Screening::SCORE.keys, id: "response-#{index}") %>
-    <% end %>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <%= f.submit %>
+    <%= f.select(question, Screening::SCORE.keys) %>
+  <% end %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <%= f.submit "Complete Check In" %>
 <% end %>
