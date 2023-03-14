@@ -1,6 +1,7 @@
 <p>Please complete all of the steps on this page:</p>
+<%= button_to "Add new Screening type and Questions" %>
 <ul>
-<% CheckIn.symptoms.each do |key,value|%>
-    <li><%= link_to "Start PHQ screener for #{key}", "/check_ins/#{@check_in.id}/screenings/#{value+1}" %></li>
+<% Question.screening.each do |question|%>
+    <li><%= link_to "Start PHQ screener for #{question.question_type}" %></li>
 <% end %>
 </ul>
