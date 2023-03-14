@@ -1,0 +1,7 @@
+<ul>
+    <% @questions.each_with_index do |question,index| %>
+        <li>
+            <%="#{index}"::"#{question}"%>
+        </li>
+    <% end %>
+</ul>

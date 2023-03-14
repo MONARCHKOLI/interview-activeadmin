@@ -1,7 +1,7 @@
 <p>Please complete all of the steps on this page:</p>
-<%= button_to "Add new Screening type and Questions" %>
+<%= button_to "Add new Screening type and Questions",new_check_in_screening_question_path(1,3) %>
 <ul>
 <% Question.screening.each do |question|%>
-    <li><%= link_to "Start PHQ screener for #{question.question_type}" %></li>
+    <li><%= link_to "Start PHQ screener for #{question.question_type}",check_in_screening_questions_path(@check_in,2) %></li>
 <% end %>
 </ul>
