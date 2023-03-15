@@ -1,6 +1,6 @@
 class Screening < ApplicationRecord
     # serialize :answers, Hash
-    belongs_to :check_in
+    has_many :check_ins
     has_many :questions
     
     SCORE = { "Not at all" => 0, "Several days" => 1,
