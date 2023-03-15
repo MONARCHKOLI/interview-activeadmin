@@ -8,3 +8,4 @@
 Patient.create(birthdate: "2001-01-01", patient_number: "ABC123")
 Question.create(question:["Little interest or pleasure in doing things", "Feeling down, depressed, or hopeless"],screening_id: 3,question_type: "depression")
 Question.create(question:["bbbbbbbbbbbbbbbb", "ccccccccccccccccc"],screening_id: 3,question_type: "anxiety")
+Question.create(question:["vvajvjvahbvavbjhavs", "avkakvnanavks"],screening_id: 2,question_type: "depression")
