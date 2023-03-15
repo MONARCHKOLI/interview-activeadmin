@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :screening do
+  factory :user do
     
   end
 end

@@ -1,5 +1,5 @@
 class CheckIn < ApplicationRecord
-  belongs_to :patient
+  belongs_to :user
   has_many :screenings
 
   def self.symptoms
