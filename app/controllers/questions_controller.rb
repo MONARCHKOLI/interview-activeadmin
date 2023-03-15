@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
     def show
-        @questions = Question.find_by(question_type: params[:question_type])
+        @question = Question.find_by(question_type: params[:question_type])
     end
 
     def new

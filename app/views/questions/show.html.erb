@@ -1,7 +1,19 @@
-<ul>
-    <% @questions.each_with_index do |question,index| %>
-        <li>
-            <%="#{index}"::"#{question}"%>
-        </li>
-    <% end %>
-</ul>
+<h1><%= @question.question_type.capitalize%></h1><hr>
+<p>Over the past 2 weeks, how often have you been bothered by any of the following problems?</p>
+
+<%= form_for(:check_in, url: check_in_path(CheckIn.last), method: :put) do |f| %>
+  <% @question.question.each_with_index do |question, index|%>
+    <br>
+    <br>
+    <%= f.label question %>
+    <br>
+    <br>
+    <%= f.select("answer-#{index}", Screening::SCORE.keys, id: "answer-#{index}") %>
+  <% end %>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <%= f.submit "Complete check in" %>
+<% end %>

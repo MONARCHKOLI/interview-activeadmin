@@ -6,6 +6,11 @@ class Screening < ApplicationRecord
     SCORE = { "Not at all" => 0, "Several days" => 1,
         "More than the half days" => 2, "Nearly every day" => 3 }
 
+    def self.questions
+      byebug
+      Question.find_by(question_type: "depression").question
+    end
+
     def severity
         case total_score
         when 0..4
