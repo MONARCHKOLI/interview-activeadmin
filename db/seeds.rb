@@ -14,3 +14,4 @@ Question.create(question:["Little interest or pleasure in doing things", "Feelin
 Question.create(question:["bbbbbbbbbbbbbbbb", "ccccccccccccccccc"],screening_id: 3)
 Question.create(question:["vvajvjvahbvavbjhavs", "avkakvnanavks"],screening_id: 2)
 User.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password') if Rails.env.development?

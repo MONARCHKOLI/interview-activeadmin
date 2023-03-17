@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
     def show
-        @questions = Question.find_by(question_type: params[:question_type])
+        @question = Question.find_by(question_type: params[:question_type])
     end
 
     def new
@@ -15,6 +15,6 @@ class QuestionsController < ApplicationController
     private
 
     def question_params
-        params.require(:question).permit(:question,:question_type,:screening_id,:check_in_id)
+        params.require(:question).permit(:question,:screening_id,:check_in_id)
     end
 end

@@ -20,13 +20,6 @@ gem 'webpacker'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'mini_racer', platforms: :ruby
 
-gem 'activeadmin'
-
-# Plus integrations with:
-gem 'devise'
-gem 'cancancan'
-
-
 gem 'nokogiri'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
@@ -39,6 +32,12 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'activeadmin'
+
+# Plus integrations with:
+gem 'devise'
+gem 'cancancan'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false

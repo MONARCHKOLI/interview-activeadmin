@@ -5,14 +5,14 @@ ActiveAdmin.register Screening do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  permit_params :check_in_id, :response
+  permit_params :check_in_id, :response, :screening_type
   #
   # or
   #
-  permit_params do
-    permitted = [:check_in_id, :response]
-    permitted << :other if params[:action] == 'create' && current_user.admin?
-    permitted
-  end
+  # permit_params do
+  #   permitted = [:check_in_id, :response]
+  #   permitted << :other if params[:action] == 'create' && current_user.admin?
+  #   permitted
+  # end
   
 end
