@@ -15,6 +15,6 @@ class QuestionsController < ApplicationController
     private
 
     def question_params
-        params.require(:question).permit(:question,:question_type,:screening_id,:check_in_id)
+        params.require(:question).permit(:question,:screening_id,:check_in_id)
     end
 end

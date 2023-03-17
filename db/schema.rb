@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2023_03_15_133658) do
-=======
-ActiveRecord::Schema.define(version: 2023_03_15_172016) do
->>>>>>> b64a0c356c3a8df684a4735dd2c902e5fc2f9c18
+ActiveRecord::Schema.define(version: 2023_03_16_070136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,11 +29,20 @@ ActiveRecord::Schema.define(version: 2023_03_15_172016) do
     t.index ["resource_type", "resource_id"], name: "index_active_admin_comments_on_resource"
   end
 
+  create_table "admin_users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_admin_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
   create_table "check_ins", force: :cascade do |t|
-<<<<<<< HEAD
-=======
     t.integer "patient_id"
->>>>>>> b64a0c356c3a8df684a4735dd2c902e5fc2f9c18
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -51,8 +56,9 @@ ActiveRecord::Schema.define(version: 2023_03_15_172016) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.string "question", default: [], array: true
+    t.string "question"
     t.integer "screening_id"
+    t.string "question_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -63,16 +69,6 @@ ActiveRecord::Schema.define(version: 2023_03_15_172016) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "screening_type"
-<<<<<<< HEAD
-    t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
-    t.string "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.index ["email"], name: "index_screenings_on_email", unique: true
-    t.index ["reset_password_token"], name: "index_screenings_on_reset_password_token", unique: true
-=======
->>>>>>> b64a0c356c3a8df684a4735dd2c902e5fc2f9c18
   end
 
   create_table "users", force: :cascade do |t|
