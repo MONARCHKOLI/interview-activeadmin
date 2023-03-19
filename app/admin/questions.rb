@@ -12,15 +12,15 @@ ActiveAdmin.register Question do
     screening_type.merge!("#{screening}": Screening.where(screening_type: screening).first.id)
   end
   
-  
+  filter :screening, label: "Screening Type", collection: proc {screening_type.each do |type| type end}
+  preserve_default_filters!
 
-  form do |f|
-    f.inputs do
-      f.label :screening_type
-      f.select :screening_id,screening_type
-      # f.select (Screening.all)
-      f.input :question
-      f.semantic_errors *f.object.errors.keys
+  form title: "Enter Question and Screening Type For Screening" do |f|
+    inputs "Details" do
+        label :screening_type 
+        select :screening_id,screening_type 
+        input :question
+        semantic_errors *object.errors.attribute_names
     end
     f.actions
   end

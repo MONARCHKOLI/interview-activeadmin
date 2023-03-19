@@ -2,6 +2,7 @@ class Screening < ApplicationRecord
     # serialize :answers, Hash
     has_many :check_ins
     has_many :questions
+    has_many :answers
 
     validates :screening_type, uniqueness: true, presence: true
     
