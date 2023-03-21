@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_16_070136) do
+ActiveRecord::Schema.define(version: 2023_03_21_183136) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,8 +37,17 @@ ActiveRecord::Schema.define(version: 2023_03_16_070136) do
     t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "user_type"
     t.index ["email"], name: "index_admin_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
+  end
+
+  create_table "answers", force: :cascade do |t|
+    t.integer "screening_id"
+    t.integer "question_id"
+    t.string "answer"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "check_ins", force: :cascade do |t|
@@ -56,19 +65,18 @@ ActiveRecord::Schema.define(version: 2023_03_16_070136) do
   end
 
   create_table "questions", force: :cascade do |t|
-    t.string "question"
     t.integer "screening_id"
-    t.string "question_type"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "question"
   end
 
   create_table "screenings", force: :cascade do |t|
     t.integer "check_in_id"
-    t.json "response"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "screening_type"
+    t.string "screening_description"
   end
 
   create_table "users", force: :cascade do |t|
